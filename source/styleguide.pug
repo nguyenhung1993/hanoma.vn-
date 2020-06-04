@@ -1,0 +1,87 @@
+//- This page only for Frontend Developer
+
+extends layout/_page-no-header
+
+block head
+  +head('Style Guide')
+  style(type='text/css').
+    body {
+      background-color: #f2f2f2;
+    }
+    .code-example {
+      margin-bottom: 25px;
+    }
+    .code-example .demo {
+      box-sizing: border-box;
+      padding: 1.5rem;
+      position: relative;
+      border: 1px solid rgba(0, 0, 0, 0.125);
+      border-radius: 0.25rem 0.25rem 0 0;
+    }
+    .code-example pre {
+      margin: 0;
+      background-color: rgba(0, 0, 0, 0.125);
+      padding: 15px;
+      border-radius: 0 0 0.25rem 0.25rem;
+    }
+
+block main
+  .container
+    .row.justify-content-between.align-items-center.pt-4.pb-4
+      .col-auto.mr-auto
+        h1 MARC Style Guides
+      .col-auto
+        a.btn.btn-success(href="links.html") Back to list of page
+
+    -
+      var components = [
+        { key: 'colors', value: 'Colors' },
+        { key: 'buttons', value: 'Buttons' },
+        { key: 'headings', value: 'Headings' },
+        { key: 'paragraphs', value: 'Paragraphs' },
+        { key: 'status', value: 'Status' },
+        { key: 'forms', value: 'Forms' },
+        { key: 'alerts', value: 'Alerts' },
+      ];
+
+    .row
+      .col-2
+        #v-pills-tab.list-group(role="tablist" aria-orientation="vertical")
+          each val, index in components
+            - var findFirstItem = index === 0
+            a(
+              data-toggle="pill"
+              role="tab"
+              aria-selected="true"
+              id=`v-pills-${val.key}-tab`
+              href=`#v-pills-${val.key}`
+              aria-controls=`v-pills-${val.key}`
+              class=findFirstItem ? 'list-group-item active' : 'list-group-item'
+            )= val.value
+      .col-10
+        #v-pills-tabContent.tab-content
+          each val, index in components
+            - var findFirstItem = index === 0
+            div(
+              role="tabpanel"
+              id=`v-pills-${val.key}`
+              aria-labelledby=`v-pills-${val.key}-tab`
+              class=findFirstItem ? 'tab-pane fade show active' : 'tab-pane fade'
+            )
+              case val.key
+                when 'colors'
+                  include styleguides/_colors
+                when 'buttons'
+                  include styleguides/_buttons
+                when 'headings'
+                  include styleguides/_headings
+                when 'paragraphs'
+                  include styleguides/_paragraphs
+                when 'status'
+                  include styleguides/_status
+                when 'forms'
+                  include styleguides/_forms
+                when 'alerts'
+                  include styleguides/_alerts
+                default
+                  - throw new Error('"val.key" must be in "components" variable')

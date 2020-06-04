@@ -1,0 +1,43 @@
+mixin header-logged()
+  header.header.header-logged.header--background-black
+    // Navbar
+    .container
+      nav.navbar.navbar-expand-lg.navbar-dark.bg-unique.p-0
+        a.navbar-brand(href='#')
+          img(src="images/logo.png").header__logo
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent-3', aria-controls='navbarSupportedContent-3', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarSupportedContent-3.collapse.navbar-collapse.align-items-center
+          ul.navbar-nav.mr-auto
+            li.nav-item.m-r-30
+              a.nav-link.py-0(href='#') Trang Chủ
+            li.nav-item.m-r-30
+              a.nav-link.py-0(href='#') Tin Tức
+            li.nav-item.m-r-30
+              a.nav-link.py-0(href='#') Nhật Ký
+          ul.navbar-nav.ml-auto.nav-flex-icons.align-items-center
+            li.nav-item.m-r-10
+              a.nav-link.py-0.waves-effect.waves-light
+                i.fa.fa-search
+            li.nav-item.m-r-10
+              a.nav-link.py-0.waves-effect.waves-light
+                i.fa.fa-shopping-cart
+            li.nav-item.m-r-10
+              a.nav-link.py-0.waves-effect.waves-light
+                i.fa.fa-commenting
+            li.nav-item.m-r-10
+              a.nav-link.py-0.waves-effect.waves-light
+                i.fa.fa-bell
+                span.badge.badge-pill.badge-danger.noti 3
+            li.nav-item.m-l-50
+              a.nav-link.py-0.waves-effect.waves-light
+                img(src="images/user-1.png").header__users
+                | Phạm Quang Đức
+
+
+
+mixin header-regis()
+  header.header.header-logged.header--background-green
+    .container
+      a(href="#")
+        img.logo(src="images/logo.png")

@@ -1,0 +1,66 @@
+// ======================================================
+// Abstracts :: Variables
+// ======================================================
+
+// Override FontAwesome path webfonts
+$fa-font-path: '../fonts';
+
+// Colors
+// Modifier variables of Boostrap 4
+// Detail: https://getbootstrap.com/docs/4.0/getting-started/theming/#variable-defaults
+$white: #fff;
+$black: #000;
+$main-black: #333;
+$flash-white: #f2f2f2;
+$orange-light: #efa622;
+$forestgreen: #447d58;
+$bg-green: linear-gradient(252.5deg, #3b734f 0%, #447d58 100%);
+$concrete: #f3f3f3;
+$bg-change-pass: rgba(240, 240, 240, .37);
+$corduroy: #626a66;
+$everglade: #275b38;
+$tundora: #4b4b4b;
+$whitesmoke: #f6f6f6;
+$orangered: #d0021b;
+$grey: #9b9b9b;
+$color-green: #3b734f;
+$grey-second: #7f7f7f;
+$red-bright: #ff1d00;
+$status-success : #03a553;
+$red-color: #ef6565;
+$blue-bright: #2787f6;
+$green-color: #22ca4d;
+
+// Border & box-shadow
+$border-grey: 1px solid #f0f0f0;
+$border-avatar: 2px solid rgba(255, 255, 255, .1);
+$shadow-base:0 2px 4px 0 rgba(0, 0, 0, .1);
+$cornflower-blue: #3b714e;
+$fuel-yellow: #efa622;
+$bg-tag: rgba(239, 166, 34, .1);
+$border-bottom: #f3f3f3;
+$bg-pagination: #fafafa;
+$gallery: #f0f0f0;
+$lightgray: #f1f1f1;
+$border-radius-base: 2px;
+
+// Fonts
+$font-family-base: 'Hiragino Sans', 'Hiragino Kaku Gothic Pro', 'Lato', 'Noto Sans Japanese', 'Yu Gothic', 'Meiryo', '游ゴシック', 'メイリオ', 'MS ゴシック', 'sans-serif';
+$font-family-ie: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'Osaka', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', 'MS PGothic', 'Hiragino Sans', 'Noto Sans Japanese', 'Yu Gothic', '游ゴシック', 'MS ゴシック', sans-serif;
+$font-size-base: 14px;
+$font-family-lato: 'Lato', sans-serif;
+
+// Paths
+$path-image: '../images';
+$path-fonts: '../fonts';
+
+$font-weight-light: 300;
+$font-weight-base: 400;
+$font-weight-medium: 600;
+$font-weight-bold: 700;
+
+$font-size-extra-small: 10px;
+$font-size-small: 12px;
+$font-size-base: 14px;
+$font-size-medium: 16px;
+$font-size-large: 18px;

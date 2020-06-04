@@ -1,0 +1,4 @@
+# Avoid Autoprefixer option and use `.browserslist` config
+# For more detail: https://github.com/postcss/autoprefixer#browsers
+# Browsers that we support
+Last 3 version

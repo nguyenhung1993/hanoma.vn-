@@ -1,0 +1,77 @@
+// ======================================================
+// Base :: Images
+// ======================================================
+
+.images {
+  position: relative;
+  z-index: 1;
+
+  &:before {
+    content: "";
+    display: block;
+  }
+}
+
+.imagesCrop {
+  overflow: hidden;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.imagesCrop0 {
+  overflow: hidden;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+.imagesCrop img {
+  max-width: 150%;
+  max-height: 150%;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+  &.wide {
+    height: 100%;
+    max-width: none;
+  }
+
+  &.tall {
+    width: 100%;
+    max-height: none;
+  }
+}
+

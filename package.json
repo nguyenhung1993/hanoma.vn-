@@ -1,0 +1,61 @@
+{
+  "name": "Teamplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp dev",
+    "build": "gulp build",
+    "js-lint": "eslint ./source/js/*.js",
+    "js-lint-fix": "eslint --fix ./source/js/*.js",
+    "css-lint": "stylelint --syntax scss \"source/sass/**/*.scss\"",
+    "css-lint-fix": "stylelint --syntax scss \"source/sass/**/*.scss\" --fix"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^4.2.1",
+    "browser-sync": "^2.14.0",
+    "del": "^2.2.2",
+    "eslint": "^5.12.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-cached": "^1.1.1",
+    "gulp-changed": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-eslint": "^6.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-include": "^2.4.1",
+    "gulp-inject": "^5.0.2",
+    "gulp-jsbeautifier": "^3.0.0",
+    "gulp-load-plugins": "^1.6.0",
+    "gulp-merge-json": "^1.3.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-prettify": "^0.5.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-pug-inheritance": "^0.2.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-stylelint": "^9.0.0",
+    "gulp-watch": "^5.0.1",
+    "install": "^0.8.1",
+    "jquery": "2.2.1",
+    "npm": "^3.10.6",
+    "pug": "^2.0.0-beta6",
+    "run-sequence": "^1.2.2",
+    "select2": "4.0.2",
+    "stylelint": "^8.4.0",
+    "stylelint-config-recommended-scss": "^3.0.0",
+    "stylelint-config-standard": "^18.0.0",
+    "stylelint-order": "^0.8.0",
+    "stylelint-scss": "^2.3.0"
+  },
+  "dependencies": {
+    "slick-carousel": "^1.8.1",
+    "slick-slider": "^1.8.2"
+  }
+}

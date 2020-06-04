@@ -1,0 +1,44 @@
+// ======================================================
+// Layout :: Copyright
+// ======================================================
+
+.copyright {
+  padding: 12px 10px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+
+  @include respond-to(smallphone-and-down) {
+    padding: 13px 20px;
+  }
+
+  .content {
+    margin-bottom: 0;
+    font-size: $font-size-extra-small;
+    text-align: center;
+    letter-spacing: 1px;
+    opacity: .5;
+    font-family: Lato, sans-serif;
+    text-shadow: 0 2px 4px 0 rgba(0, 0, 0, .08);
+    text-transform: uppercase;
+    color: $white;
+    line-height: 1;
+
+    @include respond-to(smallphone-and-down) {
+      font-size: 8px;
+    }
+  }
+
+  &.background-black {
+    background-color: #1d1e1e;
+  }
+
+  &.background-green {
+    background-color: #0c4328;
+
+    .content {
+      opacity: 1;
+    }
+  }
+}

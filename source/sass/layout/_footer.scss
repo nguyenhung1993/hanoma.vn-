@@ -1,0 +1,48 @@
+// ======================================================
+// Layout :: Footer
+// ======================================================
+
+.footer-link-group {
+  position: relative;
+  z-index: 2;
+  padding: 12px 0;
+  background: #222524;
+
+  @include respond-to(smallphone-and-down) {
+    padding: 12px 5px;
+  }
+
+  .link-group__content {
+    display: flex;
+    flex-wrap: wrap;
+
+    .link-item {
+      margin-right: 17px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      @include respond-to(tablet-and-down) {
+        margin-right: 20px;
+      }
+
+      .link {
+        color: $white;
+        letter-spacing: .83px;
+        font-size: $font-size-extra-small;
+        opacity: .8;
+        text-decoration: underline;
+        text-decoration-color: #c8c9c9;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+
+      .arrow-right {
+        margin-right: 10px;
+      }
+    }
+  }
+}

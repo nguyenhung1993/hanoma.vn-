@@ -1,0 +1,43 @@
+// ======================================================
+// Components :: Buttons
+// ======================================================
+
+.button--large {
+  border-radius: 2px;
+  padding: 15px 0;
+  border: none;
+  line-height: 1;
+}
+
+.btn {
+  height: 34px;
+  width: 96px;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+}
+
+.btn-cancel {
+  background-color: #e53e2b;
+  font-size: $font-size-small;
+  color: $white;
+  text-align: center;
+
+  &:hover {
+    color: $white;
+    background: #ca3f30;
+    text-decoration: none;
+  }
+}
+
+.btn-ok {
+  background: linear-gradient(252.5deg, #3b734f 0%, #447d58 100%);
+  font-size: $font-size-small;
+  color: $white;
+  text-align: center;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $white;
+    background: linear-gradient(252.5deg, #3b734f 100%, #447d58 0%);
+  }
+}

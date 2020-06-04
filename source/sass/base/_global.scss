@@ -1,0 +1,23 @@
+// ======================================================
+// Base :: Global
+// ======================================================
+body {
+  font-size: 14px;
+  font-family: $font-family-base;
+  color: $black;
+  position: relative;
+
+  @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+    overflow-x: hidden;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+textarea {
+  resize: none;
+}

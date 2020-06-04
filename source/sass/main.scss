@@ -1,0 +1,46 @@
+// We architecting this project follow as the "7-1 Pattern" (7 folders, 1 file)
+// For more detail about this pattern
+// (https://sass-guidelin.es/#the-7-1-pattern)
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import 'slick-carousel/slick/slick.scss';
+
+// 1. Vendors
+// ----------
+// https://getbootstrap.com/docs/4.0/getting-started/theming/#sass
+@import 'bootstrap/scss/bootstrap-grid';
+@import 'bootstrap/scss/bootstrap-reboot';
+@import 'vendors/bootstrap-override-variable';
+@import 'bootstrap/scss/bootstrap';
+@import 'select2/src/scss/core';
+
+// 2. Abstracts
+// ------------
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/functions';
+@import 'abstracts/utility-classes';
+
+// 3. Base
+// -------
+@import 'base/global';
+@import 'base/typography';
+@import 'base/colors';
+@import 'base/images';
+
+// 4. Layout
+// ---------;
+@import 'layout/content';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/copyright';
+
+// 5. Components
+// -------------
+@import 'components/tables';
+@import 'components/button';
+
+// 5. Pages
+// -------------
+@import 'pages/styleguides';
+@import 'pages/home-page';
